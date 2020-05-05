@@ -1,0 +1,9 @@
+@mixin transition_time($total-time){
+	-webkit-transition:all $total-time;
+	transition:all $total-time;
+}
+@mixin bd_raious($percent){
+	-webkit-border-radius: $percent;
+	-moz-border-radius: $percent;
+	border-radius: $percent;
+}

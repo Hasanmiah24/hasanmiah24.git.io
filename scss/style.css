@@ -1,0 +1,80 @@
+h1 {
+  color: green;
+  text-transform: capitalize;
+  font-weight: 700; }
+
+.main {
+  width: 1000px;
+  margin: auto; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  ul li {
+    display: inline-block;
+    position: relative; }
+    ul li a {
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px; }
+    ul li:hover > a {
+      color: green;
+      background-color: white; }
+    ul li:hover ul.submenu {
+      opacity: 1;
+      visibility: visible;
+      top: 105%;
+      left: 0;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px; }
+  ul ul.submenu {
+    position: absolute;
+    width: 100px;
+    top: 110%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0; }
+    ul ul.submenu li {
+      display: block; }
+      ul ul.submenu li a {
+        padding: 10px 10px;
+        font-size: 10px; }
+  ul .mega-menu {
+    position: absolute;
+    left: 0;
+    top: 130%;
+    width: 600px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0; }
+    ul .mega-menu ul {
+      width: 33.33%;
+      float: left; }
+      ul .mega-menu ul li {
+        display: block; }
+        ul .mega-menu ul li a {
+          padding: 5px 10px;
+          text-transform: capitalize; }
+  ul li:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 105%;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+
+/*# sourceMappingURL=style.css.map */
